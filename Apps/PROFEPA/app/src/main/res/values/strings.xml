@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">PROFEPA</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="img_list">Image</string>
+    <string name="img_fab">FAB</string>
+    <string name="img_logo">Logo</string>
+
+    <!-- Menu !-->
+    <string name="action_search">Buscar</string>
+    <string name="action_update">Actualizar</string>
+    <string name="action_logout">Cerrar Sesión</string>
+    <string name="action_flash_on">Encender Flash</string>
+    <string name="action_flash_off">Apagar Flash</string>
+    <string name="action_ok">Aceptar</string>
+    <string name="action_send">Enviar Reporte</string>
+
+    <!-- Toasts !-->
+    <string name="error_fields">Debe llenar todos los campos</string>
+    <string name="error_login">El usuario y/o contraseña son incorrectos</string>
+    <string name="toast_sent">El reporte se enviará cuando tenga conexión a internet</string>
+    <string name="error_result">No se encontró ningún folio con el QR escaneado</string>
+
+    <!-- Dialogs !-->
+    <string name="dialog_loading">"Espere un momento&#8230;"</string>
+
+    <!-- Actividades !-->
+    <string name="title_list">Remisiones/Reembarques</string>
+    <string name="title_scan">Escáner</string>
+    <string name="title_reportar">Reportar</string>
+
+    <!-- Login !-->
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
+
+    <!-- Update !-->
+    <string name="lbl_update">Actualizando bases de datos\nEspere un momento&#8230;</string>
+
+    <!-- Lista !-->
+    <string name="lbl_empty">Vacío</string>
+
+    <!-- Resultado !-->
+    <string name="lbl_type">Tipo</string>
+    <string name="lbl_date_ex">Fecha Expedición</string>
+    <string name="lbl_date_ven">Fecha Vencimiento</string>
+    <string name="lbl_folio_aut">Folio Autorizado</string>
+    <string name="lbl_name">Nombre</string>
+    <string name="lbl_address">Domicilio</string>
+    <string name="lbl_siem">Registro SIEM</string>
+    <string name="lbl_cant">Cantidad que ampara</string>
+    <string name="lbl_oficio">No. de oficio de autorización de documentos</string>
+    <string name="lbl_remitente">Remitente</string>
+    <string name="lbl_location">Ubicación</string>
+    <string name="lbl_transportista">Transportista</string>
+    <string name="lbl_marca">Marca</string>
+    <string name="lbl_modelo">Modelo</string>
+    <string name="lbl_placas">Placas</string>
+    <string name="lbl_materia">Materia Prima</string>
+    <string name="lbl_desc">Descripción</string>
+    <string name="lbl_volumen">Volumen y/o Peso Amparado</string>
+    <string name="lbl_unidad">Unidad de Medida</string>
+    
+    <!-- Reporte !-->
+    <string name="lbl_folio">Folio</string>
+    <string name="lbl_titular">Titular</string>
+    <string name="lbl_reporte">Reporte</string>
+    <string name="hint_reporte">Escriba la razón del reporte</string>
+
+</resources>
