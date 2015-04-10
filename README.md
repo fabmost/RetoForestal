@@ -1,14 +1,14 @@
 # FORESTAPP
 
 ## Manual del Prototipo
-* [Manual Web](,"")
-* [Manual Móvil](,"")
+* [Manual Web](https://docs.google.com/document/d/1oLTunMPyFFdjQRuCJUCrbmxJz8Tfk2TBaextgsT12DQ/edit?usp=sharing,"Manual Web")
+* [Manual Móvil](https://docs.google.com/document/d/1N36pVaTo6nKYtzKe7_2Fe0CTbm0Sphp4cmHtfuP5w2E/edit?usp=sharing,"Manual Móvil")
 
 ## Demo
 * [Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
 * [Demo Web SEMARNAT](adminforestapp.appjota.com,"Sitio Web SEMARNAT")
-* [APK App Usuarios](,"")
-* [APK App Agente de PROFEPA](,"")
+* [APK App Usuarios](,"APK Usuario")
+* [APK App Agente de PROFEPA](,"APK PROFEPA")
 
 ## Documentación
 
