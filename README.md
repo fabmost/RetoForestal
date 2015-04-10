@@ -1,4 +1,4 @@
-# RetoForestal
+# FORESTAPP
 
 ## Manual del Prototipo
 * [Manual Web](,"")
@@ -35,4 +35,4 @@
 * Finalistas Hack CDMX 2014
 
 ## LICENSE
-FORESTAPP is open-sourced software licensed under the [Apache License](https://github.com/fabmost/RetoForestal/blob/master/LICENSE,"Apache License")
+FORESTAPP is an open-sourced software licensed under the [Apache License](https://github.com/fabmost/RetoForestal/blob/master/LICENSE,"Apache License")
