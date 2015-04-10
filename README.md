@@ -1,10 +1,10 @@
 # RetoForestal
 
 ## Demo
-*[Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
-*[Demo Web SEMARNAT](adminforestapp.appjota.com,"Sitio Web SEMARNAT")
-*[APK App Usuarios](,"")
-*[APK App Agente de PROFEPA](,"")
+* [Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
+* [Demo Web SEMARNAT](adminforestapp.appjota.com,"Sitio Web SEMARNAT")
+* [APK App Usuarios](,"")
+* [APK App Agente de PROFEPA](,"")
 
 ## Documentación
 
@@ -25,3 +25,7 @@
 |------------|-----------|---------|
 |Crear Software para facilitar y mejorar la vida de las personas, brindando herramientas inteligentes que estén a la vanguardia de la tecnología.| Difundir e implementar soluciones tecnológicas para los problemas de hoy y necesidades del mañana.|Equidad, Inclusión, Innovación, Compromiso, Adaptabilidad, Responsabilidad y sobre todo Profesionalismo.|
 
+### Reconocimientos 
+* Mención Honorífica y Ganadores del Reto 'Mi Policia' Hack CDMX 2015
+* Premio del Público TheAppDateAwards 2015
+* Finalistas Hack CDMX 2014
