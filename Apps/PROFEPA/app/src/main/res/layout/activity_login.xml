@@ -9,20 +9,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" >
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/arbolito_profepa"
+        android:contentDescription="@string/img_logo"/>
+
     <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/edit_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="8dp"
         android:hint="@string/hint_user"
         android:inputType="text"
         android:textColor="@color/black"
         android:textColorHint="@color/gray_text"
         app:primaryColor="@color/primary_dark"
-        app:floatingLabel="highlight">
-
-        <requestFocus/>
-
-    </com.rengwuxian.materialedittext.MaterialEditText>
+        app:floatingLabel="highlight" />
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/edit_password"
@@ -39,9 +43,11 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_gravity="center_horizontal"
         android:text="@string/btn_login"
         android:textColor="@color/white"
-        android:background="@color/accent"/>
+        android:background="@drawable/btn_primary"/>
 
 </LinearLayout>
