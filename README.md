@@ -6,7 +6,7 @@
 
 ## Demo
 * [Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
-* [Demo Web SEMARNAT](adminforestapp.appjota.com,"Sitio Web SEMARNAT")
+* [Demo Web Administrador](adminforestapp.appjota.com,"Sitio Web Admin")
 * [APK App Usuarios](https://github.com/fabmost/RetoForestal/blob/master/Apps/FORESTAPP.apk,"APK Usuario")
 * [APK App Agente de PROFEPA](https://github.com/fabmost/RetoForestal/blob/master/Apps/PROFEPA.apk,"APK PROFEPA")
 
