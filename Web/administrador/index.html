@@ -1,0 +1,560 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipo</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+	<style>
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+  </head>
+  <body>
+	<div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="../img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="../img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="../img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+		
+	<div class="row contenido">
+		  <div class="small-8 small-offset-2 columns">
+		<div class="row bienvenido">
+		  <div class="large-12 columns">
+			<h1 class="titulo">Bienvenido administrador</h1>
+			
+		  </div>
+		</div>    
+		<div class="row">
+			<ul class="small-block-grid-1 medium-block-grid-2 text-center" data-equalizer>
+			  <li><a href="#" id="boton_registrar" class="button round" data-equalizer-watch>Registro de usuarios</a></li>
+			  <li><a href="#" id="boton_actualizar" class="button round" data-equalizer-watch>Actualizar datos</a></li>
+			</ul>
+		</div>
+		<div class="row registroUsuario hide">
+		  <div class="large-12 columns">
+			<h2 class="titulo">Registro de usuarios</h1>
+			<div id="espacio_alerta" class="hide">
+			</div>
+			<form id="formu">
+				<div class="row">
+					<label>Selecciona el rol del nuevo usuario:
+						<select id="rol">
+						   <option value="0">Selecciona</option>
+						   <option value="d5YkNZilSf">CAT</option>
+						   <option value="lbQMaV3ftx">Inspector PROFEPA</option>
+						   <option value="vg3dD6xSDg">PROFEPA</option>
+						   <option value="ZC8gDiQfhu">SEMARNAT</option>
+						   <option value="1RhGvNMSrF">Transportista</option>
+						   <option value="LzoB6SO9oi">Titular de aprovechamiento forestal</option>
+						</select>
+					</label>
+				</div>
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Nombre de usuario:
+						<input type="text" id="username" placeholder="Ingresa el nombre de usuario" />
+					  </label>
+					</div>
+				</div>
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Contrase&ntilde;a:
+						<input type="password" id="pass" placeholder="Ingresa la contrase&ntilde;a" />
+					  </label>
+					</div>
+				</div>
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Reescribe la contrase&ntilde;a:
+						<input type="password" id="pass2" placeholder="Reescribe la contrase&ntilde;a" />
+					  </label>
+					</div>
+				</div>
+				<div class="row"> <!-- aqui inicia distintos roles -->
+					<div class="large-12 columns roles"> 
+						<div class="titular rolForm "> <!-- titular -->
+							<label>Correo electr&oacute;nico:
+								<input type="text" id="correotit" placeholder="Ingresa el correo electr&oacute;nico" />
+							</label>
+							<label>Nombre completo del usuario:
+								<input type="text" id="nombretit" placeholder="Ingresa el nombre" />
+							</label>
+							<label>Domicilio:
+								<textarea id="domiciliotit" placeholder="Ingresa el domicilio"></textarea>
+							</label>
+							<label>CURP:
+								<input type="text" id="curptit" placeholder="Ingresa el CURP" />
+							</label>
+							<label>SIEM:
+								<input type="text" id="siemtit" placeholder="Ingresa el SIEM" />
+							</label>
+							<label>RFN:
+								<input type="text" id="rfntit" placeholder="Ingresa el RFN" />
+							</label>
+							<label>C&oacute;digo de autorizaci&oacute;n:
+								<input type="text" id="autotit" placeholder="Ingresa el c&oacute;digo de autorizaci&oacute;n" />
+							</label>
+							
+						</div><!-- /titular -->
+						
+						<div class="profepa rolForm "> <!-- profepa -->
+							<label>Nombre completo del usuario:
+								<input type="text" id="nombreprofepa" placeholder="Ingresa el nombre" />
+							</label>
+							<label>Correo electr&oacute;nico:
+								<input type="text" id="correoprofepa" placeholder="Ingresa el correo electr&oacute;nico" />
+							</label>
+						</div><!-- /profepa -->
+						
+						<div class="inspector rolForm "> <!-- inspector -->
+							<label>Nombre completo del usuario:
+								<input type="text" id="nombreins" placeholder="Ingresa el nombre" />
+							</label>
+						</div><!-- /inspector -->
+						
+						<div class="transportista rolForm "> <!-- transportista -->
+							<label>Medio de transporte:
+								<input type="text" id="mediotrans" placeholder="Ingresa el medio de transporte" />
+							</label>
+							<label>Propietario del transporte:
+								<input type="text" id="propietrans" placeholder="Ingresa el propietario de transporte" />
+							</label>
+							<label>Marca del transporte:
+								<input type="text" id="marcatrans"placeholder="Ingresa la marca del transporte" />
+							</label>
+							<label>Tipo de transporte:
+								<input type="text" id="tipotrans" placeholder="Ingresa el tipo de transporte" />
+							</label>
+							<label>Modelo del transporte:
+								<input type="text" id="modelotrans" placeholder="Ingresa el modelo de transporte" />
+							</label>
+							<label>Capacidad del transporte:
+								<input type="text" id="capacidadtrans" placeholder="Ingresa la capacidad del transporte" />
+							</label>
+							<label>Placas del transporte:
+								<input type="text" id="placastrans" placeholder="Ingresa el no. de placa del transporte" />
+							</label>
+							<label>Titular de aprovechamiento forestal asociado:
+								<select id="titulartrans">
+								   <option value="0">Selecciona</option>
+								</select>
+							</label>
+							<label>Nombre del operador del transporte:
+								<input type="text" id="operadortrans" placeholder="Ingresa el nombre del operador" />
+							</label>
+						</div><!-- /transportista -->
+						
+						<div class="cat rolForm "> <!-- cat -->
+							<label>Nombre completo del usuario:
+								<input type="text" id="nombrecat" placeholder="Ingresa el nombre del CAT" />
+							</label>
+							<label>CURP:
+								<input type="text" id="curpcat" placeholder="Ingresa el CURP" />
+							</label>
+							<label>C&oacute;digo de identificaci&oacute;n del CAT:
+								<input type="text" id="identicat" placeholder="Ingresa el c&oacutedigo de identificaci&oacute;n" />
+							</label>
+							<label>Domicilio:
+								<textarea id="domiciliocat" placeholder="Ingresa el domicilio"></textarea>
+							</label>
+							<label>C&oacute;digo de autorizaci&oacute;n del CAT:
+								<input type="text" id="autocat" placeholder="Ingresa el c&oacutedigo de autorizaci&oacute;n" />
+							</label>
+						</div><!-- /cat -->
+						
+						<div class="semarnat rolForm "> <!-- semarnat -->
+							<label>Nombre completo del usuario:
+								<input type="text" id="nombresemarnat" placeholder="Ingresa el nombre" />
+							</label>
+							<label>Correo electr&oacute;nico:
+								<input type="text" id="correosemarnat" placeholder="Ingresa el correo electr&oacute;nico" />
+							</label>
+						</div> <!-- /semarnat -->
+					</div> <!-- aqui termina distintos roles -->
+				</div>
+				<div class="row comun"> 
+					<div class="large-12 columns text-right "> 
+						<a href="#" id="enviar" class="button radius">Enviar</a>
+						<a href="#" id="borrar" class="button radius">Borrar</a>
+					</div>
+				</div>
+			</form>
+		  </div>
+		</div>
+		<div class="row actualizarDatos hide">
+		  <div class="large-12 columns">
+			<h2 class="titulo">Actualización de datos</h1>
+			
+		  </div>
+		</div>
+	 </div>
+	</div>
+    <div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+    <script src="../js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="../js/foundation.min.js"></script>
+    <script>
+		// inicialización de parse y foundation
+		$(document).foundation();
+		$( document ).ready(function() {
+			$(".rolForm").hide(0);	
+			$(".comun").hide(0);	
+		});
+		Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+		$("#boton_registrar").click(function(){
+			$(".actualizarDatos").slideUp("fast");
+			$(".registroUsuario").show("slow");
+		});
+		$("#boton_actualizar").click(function(){
+			$(".registroUsuario").slideUp("fast");
+			$(".actualizarDatos").show("slow");
+		});
+		
+		// aux para listener change
+		function cambiaForms($clase){
+			$(".rolForm").slideUp("fast");	
+			$(".comun").slideUp("fast");
+			if($clase != 0){
+				$("."+ $clase).show( "slow" );
+				$(".comun").show( "slow" );		
+			}
+			
+		} // fin cambiaForms
+		
+		// listener de botones
+		$("#enviar").click(function(){
+			console.log("enviar" );
+			guardaObjeto();
+		});
+		
+		$("#borrar").click(function(){
+			//console.log("borrar" );
+			//console.log($("#formu"));
+			$("#formu")[0].reset();
+			cambiaForms(0);
+		});
+		
+		// carga los titulares para los transportistas
+		function cargaTitulares(){
+			//console.log($("#titulartrans").html());
+			var html = '<option value="0">Selecciona</option> \n'; // selecciona
+			var Titular = Parse.Object.extend("Titular");
+			var query = new Parse.Query(Titular);
+			// Sorts the results in ascending order by the score field
+			query.ascending("Nombre");
+			query.find({
+			  success: function(results) {
+				console.log("Successfully retrieved " + results.length + " scores.");
+				// Do something with the returned Parse.Object values
+				for (var i = 0; i < results.length; i++) { 
+				  var object = results[i];
+				  //console.log(object.id + ' - ' + object.get('Nombre'));
+				  html = html + '<option value="' + object.id + 
+								'">' + object.get('Nombre') + '</option> \n'; // para ciclo
+				}
+				//console.log(html);
+				$("#titulartrans").html(html); // cargamos nuevos titulares
+			  },
+			  error: function(error) {
+				console.log("Error: " + error.code + " " + error.message);
+			  }
+			});
+			
+			
+		} 
+		// llamsr despues de hacer un save o algo a parse para borrar
+		// el form e informar y hacer espacio en la consola
+		function afterRequest($resultado){
+			$("#borrar").click();
+			if($resultado == "success"){
+				
+				var html = '<div data-alert class="alert-box success radius">'+
+				'Se ha registrado el nuevo usuario.' + 
+				'<a href="#" class="close">&times;</a></div>';
+				var espacio = $("#espacio_alerta");
+				espacio.addClass("hide");
+				espacio.html(html);
+				espacio.show("slow");
+				console.log("Exito **** \n");
+				Parse.User.logOut();
+			} else {
+				console.log("Algo fallo ****\n ");
+				
+				var html = '<div data-alert class="alert-box alert radius">'+
+				'Ha ocurrido un problema al registrar el nuevo usuario.'+
+				' Intenta con otro nombre de usuario o contacta a soporte.' + 
+				'<a href="#" class="close">&times;</a></div>';
+				var espacio = $("#espacio_alerta");
+				espacio.addClass("hide");
+				espacio.html(html);
+				espacio.show("slow");
+			}
+			$(document).foundation();
+		}
+	
+		// guarda los datos a parse usuario y de acuerdo a su rol
+		function guardaObjeto(){
+			var $username = $("#username").val();
+			var $pass = $("#pass").val();
+			// preparamos rol para relational data
+			var Rol = Parse.Object.extend("Rol");
+			var $rol = new Rol();
+			$rol.id = $("#rol").val();
+			// preparamos user para relational data
+			//var User = Parse.Object.extend("User");
+			var u = new Parse.User();
+			u.set("username", $username);
+			u.set("password", $pass);
+			u.set("Rol", $rol);
+			// hacemos la relación al rol
+			u.signUp(null, {
+			  success: function(u) { // **** usuario creado con éxito
+				console.log('User created Id: ' + u.id);
+				switch($("#rol").val()){
+					case 'd5YkNZilSf': // cat
+						var CAT = Parse.Object.extend("CAT");
+						var cat = new CAT();
+						cat.save({
+							  CURP: $("#curpcat").val(),
+							  Codigo_iden: $("#identicat").val(),
+							  Domicilio: $("#domiciliocat").val(),
+							  Nombre: $("#nombrecat").val(),
+							  Usuario: u,
+							  codigo_autorizacion: $("#autocat").val()
+							}, {
+							  success: function(cat) { // guardado
+								console.log("CAT guardado");
+								afterRequest("success");
+							  },
+							  error: function(cat, error) { // bailo...
+								console.log('Failed to create new User, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						
+						break;
+					case 'lbQMaV3ftx': // inspector
+						var Inspectores = Parse.Object.extend("Inspectores");
+						var inspector = new Inspectores();
+						inspector.save({
+							  Nombre: $("#nombreins").val(),
+							  Usuario: u
+							}, {
+							  success: function(inspector) { // guardado
+								console.log("Inspector guardado");
+								afterRequest("success");
+							  },
+							  error: function(inspector, error) { // bailo...
+								console.log('Failed to create new User, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						break;
+					case 'vg3dD6xSDg': // profepa
+						var PROFEPA = Parse.Object.extend("PROFEPA");
+						var PROFEPA = new PROFEPA();
+						PROFEPA.save({
+							  Nombre: $("#nombreprofepa").val(),
+							  Correo: $("#correoprofepa").val(),
+							  Usuario: u
+							}, {
+							  success: function(PROFEPA) { // guardado
+								console.log("PROFEPA guardado");
+								afterRequest("success");
+							  },
+							  error: function(PROFEPA, error) { // bailo...
+								console.log('Failed to create new PROFEPA, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						break;
+					case 'ZC8gDiQfhu': // semarnat
+						var SEMARNAT_PRO = Parse.Object.extend("SEMARNAT_PRO");
+						var SEMARNAT_PRO = new SEMARNAT_PRO();
+						SEMARNAT_PRO.save({
+							  Nombre: $("#nombresemarnat").val(),
+							  Correo: $("#correosemarnat").val(),
+							  Usuario: u
+							}, {
+							  success: function(SEMARNAT_PRO) { // guardado
+								console.log("SEMARNAT_PRO guardado");
+								afterRequest("success");
+							  },
+							  error: function(SEMARNAT_PRO, error) { // bailo...
+								console.log('Failed to create new SEMARNAT_PRO, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						break;
+					case '1RhGvNMSrF': // transp
+						var Transportistas = Parse.Object.extend("Transportistas");
+						var trans = new Transportistas();
+						var Titular = Parse.Object.extend("Titular");
+						var titular = new Titular();
+						titular.id = $("#titulartrans").val()
+						trans.save({
+							  Capacidad:$("#capacidadtrans").val(),
+							  Chofer: $("#operadortrans").val(),
+							  Marca:$("#marcatrans").val(),
+							  Medio:$("#mediotrans").val(),
+							  Modelo:$("#modelotrans").val(),
+							  Placas:$("#placastrans").val(),
+							  Propietario:$("#propietrans").val(),
+							  Tipo:$("#tipotrans").val(),
+							  Titular:titular,
+							  Usuario: u
+							}, {
+							  success: function(trans) { // guardado
+								console.log("trans guardado");
+								afterRequest("success");
+							  },
+							  error: function(trans, error) { // bailo...
+								console.log('Failed to create new trans, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						break;
+					case 'LzoB6SO9oi': // Titular
+						var Titular = Parse.Object.extend("Titular");
+						var titular = new Titular();
+						titular.save({
+							  CURP: $("#curptit").val(),
+							  Codigo_autorizacion: $("#autotit").val(),
+							  Correo: $("#correotit").val(),
+							  Domicilio: $("#domiciliotit").val(),
+							  Nombre: $("#nombretit").val(),
+							  RFN: $("#rfntit").val(),
+							  SIEM: $("#siemtit").val(),
+							  Usuario: u
+							}, {
+							  success: function(titular) { // guardado
+								console.log("titular guardado");
+								afterRequest("success");
+							  },
+							  error: function(titular, error) { // bailo...
+								console.log('Failed to create new titular, with error code: ' + error.message);
+								afterRequest("error");
+							  }
+						});
+						break;
+					case '0':
+						//console.log('ocultar');
+						//cambiaForms(0);
+				}
+			  },
+			  error: function(u, error) {
+				// Execute any logic that should take place if the save fails.
+				// error is a Parse.Error with an error code and message.
+				console.log('Failed to create new User, with error code: ' + error.message);
+				afterRequest("error");
+			  }
+			});
+		}
+		 
+		  // listener de cambio para poner form de acuerdo al rol
+		  $("#rol").change(function(){ 
+			//console.log($(this).val());
+			switch($(this).val()){
+				case 'd5YkNZilSf': // cat
+					//console.log('cat');
+					cambiaForms("cat");
+					break;
+				case 'lbQMaV3ftx': // inspector
+					//console.log('inspector');
+					cambiaForms("inspector");
+					break;
+				case 'vg3dD6xSDg': // profepa
+					//console.log('profepa');
+					cambiaForms("profepa");
+					break;
+				case 'ZC8gDiQfhu': // semarnat
+					//console.log('semarnat');
+					cambiaForms("semarnat");
+					break;
+				case '1RhGvNMSrF': // transp
+					//console.log('transportista');
+					cambiaForms("transportista");
+					cargaTitulares();
+					break;
+				case 'LzoB6SO9oi': // Titular
+					//console.log('titular');
+					cambiaForms("titular");
+					break;
+				case '0':
+					//console.log('ocultar');
+					cambiaForms(0);
+			}
+		  
+		  }); // fin de listener para roles  
+		  //Parse.User.logOut();
+    </script>
+  </body>
+</html>

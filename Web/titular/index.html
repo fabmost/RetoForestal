@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titular de aprovechamiento forestal - Prototipo</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+	<style>
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+	<style>
+		/* para navegación */
+		.header{margin-bottom:0px;}
+		
+		.navegacion {
+			margin-bottom: 3em;
+			background-color: #89bd2e;
+		}
+		.item_navegacion{
+			  text-align: center;
+			  border-left-style: solid;
+			  border-color: rgb(215, 239, 214);
+			  padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		}
+		.item_navegacion:hover{
+			background-color: #1b676c;
+		}
+		.item_navegacion:first-child{
+			border-width:0px;
+		}
+		.item_navegacion a{
+			color:white;
+		}
+	</style>
+	<style>
+		.flag_no img {
+		  max-width: 4em;
+		  
+		}
+		
+		
+		.noOperaciones {
+			line-height: 1em;
+			margin: 0.3em;
+		}
+		
+		.noOperaciones span{
+			  font-weight: bold;
+			  margin-left: .2em;
+			  font-size: 4em;
+			  line-height: .8em;
+		}
+		
+		.textoOperaciones{
+			color: #868686;
+			//background-image: url("../img/reembarques.png");
+			background-repeat:no-repeat;
+			background-size:3em;
+			background-position: left center; 
+		}
+		
+		.dos{  
+		font-size: 1.6em;
+		  text-align: center;
+		  font-weight: bold;
+		}
+		.alert-box.alert {
+		  background-color: #EA9799;
+		  border-color: #aa0d10;
+		  color: #F90303;
+		}
+		.alert-box.success{color:#165256;}
+	</style>
+  </head>
+  <body>
+	<div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="../img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="../img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="../img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+	
+	<!-- navegacion -->
+	<div class="navegacion">
+		<div class="row" data-equalizer>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="historico.html" title="Ver operaciones realizadas">Hist&oacute;rico</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="index.html" title="Alta de documento">Alta de remisiones y reembarques</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="nuevo_transporte.html" title="Registrar nuevo transportista">Alta transportista</a>
+			  </div>
+		</div>
+	 </div>
+	
+	<div class="row"><!-- validacion de folio -->
+      <div class="large-12 columns">
+		<form onsubmit="return false;">
+			<div class="row">
+				<div class="large-12 columns">
+				  <label>Ingresa el folio de la nueva operaci&oacute;n.
+					<input type="text" id="folio" placeholder="No. de folio" />
+				  </label>
+				  <p id="leyendaFolio" class="hide"></p>
+				</div>
+			</div>
+			<div class="large-12 columns text-center "> 
+				<a href="#" id="validarFolio" class="button radius">Validar</a>
+			</div>
+		</form> 
+      </div>
+    </div>
+	<div id="no_remisiones_reembarques" class="row small-uncollapse"> <!-- estadisticas y botones -->
+		<div class="medium-6 remisiones columns text-center">
+			<h2>Remisiones</h2>
+			<div class="row text-center"> <!-- estadisticas y botones -->
+				<div class="small-12 columns  flag_no">
+					
+					<p class="noOperaciones text-center"><img src="../img/remisiones.png"/><span>268</span></p>
+					<p class="textoOperaciones text-center">REMISIONES REALIZADAS</p>
+				</div>
+			</div>
+			<a href="nueva_remision.html" id="nueva_remision" class="button round">Nueva remisi&oacute;n</a>
+		</div>
+		<div class="medium-6 columns text-center reembarques">
+			<h2>Reembarques</h2>		
+			<div class="row text-center"> <!-- estadisticas y botones -->
+				<div class="small-12 columns  flag_no">
+					
+					<p class="noOperaciones text-center"><img src="../img/reembarques.png"/><span>348</span></p>
+					<p class="textoOperaciones text-center">REEMBARQUES REALIZADAS</p>
+				</div>
+			</div>
+			<a href="#" class="button round">Nuevo reembarque</a>
+		</div>
+	</div>
+	
+	
+    
+    <div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+    <script src="../js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="../js/foundation.min.js"></script>
+    <script>
+		// inicialización de parse y foundation
+		$(document).foundation();
+		Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+		
+		
+		function alertError(msg){
+			var espacio = $("#leyendaFolio");
+			// no pasa validacion
+			var html = '<div data-alert class="alert-box dos  alert radius">'+
+				msg + '<a href="#" class="close">&times;</a></div>';
+			//var espacio = $("#mensaje");
+			espacio.addClass("hide");
+			var html1 = espacio.html();
+			espacio.html(html1 + html);
+			espacio.show("slow");
+			$(document).foundation();
+		}
+		function alertSuccess(msg){
+			var espacio = $("#leyendaFolio");
+			// no pasa validacion
+			var html = '<div data-alert class="alert-box dos  success radius">'+
+				msg + '<a href="#" class="close">&times;</a></div>';
+			//var espacio = $("#mensaje");
+			espacio.addClass("hide");
+			var html1 = espacio.html();
+			espacio.html(html1 + html);
+			espacio.show("slow");
+			$(document).foundation();
+		}
+		
+		$("#validarFolio").click(function(){
+			var espacio = $("#leyendaFolio");
+			if($("#folio").val() == 12152116){
+				alertSuccess('El folio es v&aacute;lido.');
+			} else {
+				alertError('El folio no es v&aacute;lido.');
+			}
+		});
+		
+    </script>
+  </body>
+</html>

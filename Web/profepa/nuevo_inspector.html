@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROFEPA - Prototipo</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+	<style>
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+	<style>
+		/* para navegación */
+		.header{margin-bottom:0px;}
+		
+		.navegacion {
+			margin-bottom: 3em;
+			background-color: #89bd2e;
+		}
+		.item_navegacion{
+			  text-align: center;
+			  border-left-style: solid;
+			  border-color: rgb(215, 239, 214);
+			  padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		}
+		.item_navegacion:hover{
+			background-color: #1b676c;
+		}
+		.item_navegacion:first-child{
+			border-width:0px;
+		}
+		.item_navegacion a{
+			color:white;
+		}
+	</style>
+  </head>
+  <body>
+	<div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="../img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="../img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="../img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+	
+	<!-- navegacion -->
+	<div class="navegacion">
+		<div class="row" data-equalizer>
+			  <div class="small-6 columns item_navegacion" data-equalizer-watch>
+				<a href="index.html" title="Ver historial de inspecciones">
+					Inspecciones
+				</a>
+			  </div>
+			  <div class="small-6 columns item_navegacion" data-equalizer-watch>
+				<a href="nuevo_inspector.html" title="Registrar inspectores">Registrar inspectores</a>
+			  </div>
+		</div>
+	 </div>
+  
+    <div class="row">
+		<div class="small-8 small-offset-2 columns">
+		<div class="row">
+		  <div class="large-12 columns">
+			<h1>Alta de nuevo inspector</h1>
+		  </div>
+		</div>
+		
+		<div id="mensaje_enviar"></div>
+		
+		<div class="row registroUsuario">
+		  <div class="large-12 columns">
+			<form id="formu"><!--option value="1RhGvNMSrF">Transportista</option-->
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Nombre de usuario:
+						<input type="text" id="username" placeholder="Ingresa el nombre de usuario" />
+					  </label>
+					</div>
+				</div>
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Contrase&ntilde;a:
+						<input type="password" id="pass" placeholder="Ingresa la contrase&ntilde;a" />
+					  </label>
+					</div>
+				</div>
+				<div class="row comun">
+					<div class="large-12 columns">
+					  <label>Reescribe la contrase&ntilde;a:
+						<input type="password" id="pass2" placeholder="Reescribe la contrase&ntilde;a" />
+					  </label>
+					</div>
+				</div>
+				
+				<div class="profepa rolForm "> <!-- profepa -->
+					<label>Nombre:
+						<input type="text" id="nombreprofepa" placeholder="Ingresa el nombre" />
+					</label>
+				</div><!-- /profepa -->
+				<div class="row comun"> 
+					<div class="large-12 columns text-right "> 
+						<a href="#" id="enviar" class="button radius">Enviar</a>
+						<a href="#" id="borrar" class="button radius">Borrar</a>
+					</div>
+				</div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+	
+    <script src="../js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="../js/foundation.min.js"></script>
+    <script>
+		// inicialización de parse y foundation
+		$(document).foundation();
+		Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+		
+		function alertError(msg){
+			var espacio = $("#mensaje_enviar");
+			// no pasa validacion
+			var html = '<div data-alert class="alert-box dos  alert radius">'+
+				msg + '<a href="#" class="close">&times;</a></div>';
+			//var espacio = $("#mensaje");
+			espacio.addClass("hide");
+			var html1 = espacio.html();
+			espacio.html(html1 + html);
+			espacio.show("slow");
+			$(document).foundation();
+		}
+		function alertSuccess(msg){
+			var espacio = $("#mensaje_enviar");
+			// no pasa validacion
+			var html = '<div data-alert class="alert-box dos  success radius">'+
+				msg + '<a href="#" class="close">&times;</a></div>';
+			//var espacio = $("#mensaje");
+			espacio.addClass("hide");
+			var html1 = espacio.html();
+			espacio.html(html1 + html);
+			espacio.show("slow");
+			$(document).foundation();
+		}
+		
+		// listener de botones
+		$("#enviar").click(function(){
+			console.log("enviar" );
+			guardaObjeto();
+		});
+		
+		$("#borrar").click(function(){
+			$("#formu")[0].reset();
+		});
+		
+		//currentUser = 
+
+		// llamsr despues de hacer un save o algo a parse para borrar
+		// el form e informar y hacer espacio en la consola
+		function afterRequest($resultado){
+			$("#borrar").click();
+			if($resultado == "success"){
+				console.log("Exito **** \n");
+				alertSuccess("Se ha registrado al inspector correctamente");
+				Parse.User.logOut(); // volamos al inspector
+				
+				// volver a loguearse
+			} else {
+				console.log("Algo fallo ****\n ");
+				alertError("Ocurri&oacute; un error al registrar al inspector, intente con otro nombre de usuario o contacte a soporte");
+			}
+		}
+	
+		// guarda los datos a parse usuario y de acuerdo a su rol
+		function guardaObjeto(){
+			var $username = $("#username").val();
+			var $pass = $("#pass").val();
+			// preparamos rol para relational data
+			var Rol = Parse.Object.extend("Rol");
+			var $rol = new Rol();
+			$rol.id = 'lbQMaV3ftx';//******** rol de profepa
+			// preparamos user para relational data
+			var u = new Parse.User();
+			u.set("username", $username);
+			u.set("password", $pass);
+			u.set("Rol", $rol);
+			// hacemos la relación al rol
+			u.signUp(null, {
+			  success: function(u) { // **** usuario creado con éxito
+				console.log('User created Id: ' + u.id);
+				var Inspectores = Parse.Object.extend("Inspectores");
+				var ins = new Inspectores();
+				ins.save({
+					  Nombre:$("#nombreprofepa").val(),
+					  Usuario: u
+					}, {
+					  success: function(ins) { // guardado
+						console.log("ins guardado");
+						afterRequest("success");
+					  },
+					  error: function(ins, error) { // bailo...
+						console.log('Failed to create new trans, with error code: ' + error.message);
+						afterRequest("error");
+					  }
+				});
+			  },
+			  error: function(u, error) {
+				// Execute any logic that should take place if the save fails.
+				// error is a Parse.Error with an error code and message.
+				console.log('Failed to create new User, with error code: ' + error.message);
+				afterRequest("error");
+			  }
+			});
+		}
+		 
+		  
+    </script>
+  
+  </body>
+</html>

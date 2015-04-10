@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_user"
+            android:textSize="14sp"
+            android:textColor="@color/gray_text"/>
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/lbl_rol"
+            android:textSize="14sp"
+            android:textColor="@color/gray_text"/>
+
+        <TextView
+            android:id="@+id/txt_rol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:hint="@string/hint_nombre"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            app:primaryColor="@color/primary_dark"
+            app:floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            app:primaryColor="@color/primary_dark"
+            app:floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_domicilio"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            app:primaryColor="@color/primary_dark"
+            app:floatingLabel="highlight"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_curp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_curp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            app:primaryColor="@color/primary_dark"
+            app:floatingLabel="highlight"/>
+
+        <LinearLayout
+            android:id="@+id/layout_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_codigo_iden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_codigo_iden"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_titular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_siem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_siem"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_rfn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_rfn"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight"/>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edit_codigo_aut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_codigo_aut"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            app:primaryColor="@color/primary_dark"
+            app:floatingLabel="highlight"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

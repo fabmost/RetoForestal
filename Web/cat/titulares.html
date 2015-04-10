@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAT - Prototipo</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+	<style>
+		/* estilo para la tabla*/
+		.detalle{
+			
+		}
+		table thead{
+			background-color:#89bd2e;
+			color:white;
+		}
+		table thead tr th{color: white;}
+		
+		table tbody tr{
+			border: solid 1px #DDDDDD;
+		}
+		
+		table {
+			 border-collapse: collapse;
+			 margin: auto;
+		}
+		.reveal-modal{
+			padding:0px;
+		}
+		div#datos_modal {
+		  top: 100px;
+		  position: relative;
+		}
+	</style>
+	<style>
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+	<style>
+		/* para navegación */
+		.header{margin-bottom:0px;}
+		
+		.navegacion {
+			margin-bottom: 3em;
+			background-color: #89bd2e;
+		}
+		.item_navegacion{
+			  text-align: center;
+			  border-left-style: solid;
+			  border-color: rgb(215, 239, 214);
+			  padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		}
+		.item_navegacion:hover{
+			background-color: #1b676c;
+		}
+		.item_navegacion:first-child{
+			border-width:0px;
+		}
+		.item_navegacion a{
+			color:white;
+		}
+	</style>
+  </head>
+  <body>
+    <div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="../img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="../img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="../img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+	<!-- navegacion -->
+	<div class="navegacion">
+		<div class="row" data-equalizer>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="titulares.html" title="Ver datos de titulares de aprovechamieto forestal">
+					Titulares de aprovechamieto
+				</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="index.html" title="Inicio">Ir al inicio</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="documentos.html" title="Ver el historial de operaciones">Documentos</a>
+			  </div>
+		</div>
+	 </div>
+	
+    <div class="row">
+      <div class="large-12 columns">
+      </div>
+	  <p class="text-center">Para consultar los datos del titular de aprovechamiento forestal haz clic en el botón <i>ver detalles</i></p>
+    </div>
+    
+	<div class="row text-center"><!-- tabla al inicio -->
+      <div class="large-12 columns">
+		<div id="datos" class="hide">
+			<table id="tabla_titulares">
+				<thead>
+					<tr>
+						<th >Folio de autorizaci&oacute;n</th>
+						<th >Nombre</th>
+						<th > </th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div id="mensaje">
+			<p>Cargando informaci&oacute;n, espera por favor</p>
+		</div>
+		
+		<!--a href="#" data-reveal-id="myModal">Click Me For A Modal</a-->
+		
+		<div id="myModal" class="reveal-modal-bg" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div id="datos_modal" class="hide">
+				<table id="tabla_titular">
+					<thead>
+						<tr>
+							<th >Dato</th>
+							<th >Informaci&oacute;n</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td >C&oacute;digo de autorizaci&oacute;n</td><td class="detalle" id="cod_auto">  </td></tr>
+						<tr><td >Nombre</td><td class="detalle" id="nombre">  </td></tr>
+						<tr><td >CURP</td><td class="detalle" id="curp">  </td></tr>
+						<tr><td >Correo electr&oacute;nico</td><td class="detalle" id="correo">  </td></tr>
+						<tr><td >Domicilio</td><td class="detalle" id="domicilio">  </td></tr>
+						<tr><td >RFN</td><td class="detalle" id="rfn">  </td></tr>
+						<tr><td >SIEM</td><td class="detalle" id="siem">  </td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="mensaje_modal">
+				<p>Cargando datos, espere por favor...</p>
+			</div>
+		  
+			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+		</div>
+      </div>
+    </div>
+
+	<div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+    <script src="../js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="../js/foundation.min.js"></script>
+    <script>
+	 // inicialización de parse y foundation
+      $(document).foundation();
+	  Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+	  // cambiar a titular
+	  function llenaModal(id){
+			var Titular = Parse.Object.extend("Titular");
+			var query = new Parse.Query(Titular);
+			query.equalTo("objectId", id);
+			query.first({
+			  success: function(tit) {
+				console.log("aqui esta la info :) " + tit);
+				$(".detalle").text("");
+				$("#cod_auto").text(tit.get("Codigo_autorizacion"));
+				$("#nombre").text(tit.get("Nombre"));
+				$("#curp").text(tit.get("CURP"));
+				$("#correo").text(tit.get("Correo"));
+				$("#domicilio").text(tit.get("Domicilio"));
+				$("#rfn").text(tit.get("RFN"));
+				$("#siem").text(tit.get("SIEM"));
+				
+				$("#mensaje_modal").addClass("hide");
+				$("#datos_modal").removeClass("hide");
+			  },
+			  error: function(error) {
+				$("mensaje_modal p").text("Modal Error: " + error.code + " " + error.message);
+			  }
+			});
+		}
+		$(document).ready(function(){
+			//$("#buscar_folio").click(function(){buscaFolio();});
+			//$("#buscar").submit(function(){buscaFolio();return false;});			
+			// cargando los elementos de la tabla
+			var Titular = Parse.Object.extend("Titular");
+			var tbody = '';
+			var query = new Parse.Query(Titular);
+			query.ascending("Nombre");
+			query.limit(10);
+			query.find({
+			  success: function(tits) {
+			  console.log(tits.length + " tits encontrados");
+				for (var i = 0; i < tits.length; i++) {
+				  tbody = tbody + "<tr>"; //</tr> 
+				   tbody = tbody + "<td>" + tits[i].get("Codigo_autorizacion") + "</td>";
+				   tbody = tbody + "<td>" + tits[i].get("Nombre") + "</td>";
+				   tbody = tbody + '<td><a href="#" data-reveal-id="myModal" class="trigger" id="' + tits[i].id + '">Ver detalles</a></td>';
+				  tbody = tbody + "</tr>";
+				}
+				$("#tabla_titulares tbody").html(tbody);
+				$(document).foundation(); // reinicializamos para acceder al modal
+				$(".trigger").click(function(){
+					console.log("trigger " + $(this).attr("id")+ " reportandose");
+					llenaModal($(this).attr("id"));
+				});
+				$("#mensaje").addClass("hide");
+				$("#datos").removeClass("hide");
+			  },
+				error: function(error) {
+					console.log("Tabla Error: " + error.code + " " + error.message);
+					$("#mensaje p").text("Error");
+				}
+			});
+				
+		});
+	</script>
+  </body>
+</html>

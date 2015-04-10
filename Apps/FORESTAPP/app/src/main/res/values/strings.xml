@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">FORESTAPP</string>
+    <string name="google_maps_key">AIzaSyBks7b8Z6HxbVLtFshqXsHqKd6k-6KVF5Y</string>
+
+    <string name="img_fab">FAB</string>
+    <string name="img_qr">QR</string>
+    <string name="img_folio">Type</string>
+    <string name="img_logo">Logo</string>
+    <string name="img_menu">Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Activities !-->
+    <string name="title_datos">Tus Datos</string>
+    <string name="title_alta">Alta</string>
+    <string name="title_register">Registrar</string>
+    <string name="title_validate">Validar</string>
+    <string name="title_empresas">Titulares</string>
+    <string name="title_transportista">Remisiones/Reembarques</string>
+
+    <!-- Menu !-->
+    <string name="action_search">Buscar</string>
+    <string name="action_update">Actualizar</string>
+    <string name="action_logout">Cerrar Sesión</string>
+    <string name="action_flash_on">Encender Flash</string>
+    <string name="action_flash_off">Apagar Flash</string>
+    <string name="action_ok">Aceptar</string>
+    <string name="action_send">Enviar Reporte</string>
+
+    <!-- Toasts !-->
+    <string name="toast_recover">Se le ha enviado un correo con instrucciones para recuperar su contraseña</string>
+    <string name="toast_no_mail">El correo que ingresó no está en la base de datos</string>
+    <string name="error_fields">Debe llenar todos los campos</string>
+    <string name="error_login">El usuario y/o contraseña son incorrectos</string>
+    <string name="toast_no_folio">No ha seleccionado un folio</string>
+    <string name="toast_no_results">No se encontraron resultados</string>
+    <string name="error_datos">Hay un error con sus datos</string>
+    <string name="toast_sent">Se enviará la información cuando tenga conexión a internet</string>
+
+    <!-- Dialogs !-->
+    <string name="dialog_loading">"Espere un momento&#8230;"</string>
+    <string name="dialog_recover">Recuperar Contraseña</string>
+
+    <!-- Buttons !-->
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_search">Buscar</string>
+    <string name="btn_password">Recuperar contraseña</string>
+    <string name="btn_ok">Aceptar</string>
+
+    <!-- Login !-->
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_mail">Correo electrónico</string>
+
+    <!-- Alta !-->
+    <string name="lbl_user">Usuario</string>
+    <string name="lbl_rol">Rol</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_domicilio">Domicilio</string>
+    <string name="hint_curp">CURP</string>
+    <string name="hint_siem">SIEM</string>
+    <string name="hint_rfn">RFN</string>
+    <string name="hint_codigo_iden">Código de Identificación</string>
+    <string name="hint_codigo_aut">Código de Autorización</string>
+
+    <!-- Update !-->
+    <string name="lbl_update">Actualizando bases de datos\nEspere un momento&#8230;</string>
+
+    <!-- Lista !-->
+    <string name="lbl_empty">Vacío</string>
+
+    <!-- Titular !-->
+    <string name="lbl_reporte">Reporte</string>
+    <string name="lbl_profepa">Agente de la PROFEPA</string>
+    <string name="lbl_fecha_reporte">Fecha del reporte</string>
+    <string name="lbl_motivo">Motivo</string>
+    <string name="lbl_datos">Datos</string>
+    <string name="lbl_producto">Producto</string>
+    <string name="lbl_propietario">Propietario</string>
+    <string name="lbl_medio">Medio</string>
+    <string name="lbl_capacidad">Capacidad</string>
+
+    <string-array name="array_tipo">
+        <item>Remision Forestal</item>
+        <item>Reembarque Forestal</item>
+    </string-array>
+
+    <!-- Transportista !-->
+    <string name="lbl_destino">Destino</string>
+    <string name="lbl_nombre">Nombre</string>
+    <string name="lbl_direccion">Dirección</string>
+    <string name="lbl_fecha">Fecha</string>
+    <string name="lbl_materia">Materia Prima</string>
+    <string name="lbl_tipo">Tipo</string>
+    <string name="lbl_cant">Cantidad</string>
+    <string name="lbl_desc">Descripción</string>
+    <string name="lbl_vol">Volumen y/o peso amparado</string>
+    <string name="lbl_unidad">Unidad de Medida</string>
+
+    <!-- CAT !-->
+    <string name="lbl_folio">Folio Autorizado</string>
+    <string name="lbl_titular">Titular</string>
+    <string name="lbl_observaciones">Observaciones</string>
+    <string name="lbl_type">Tipo</string>
+    <string name="lbl_date_ex">Fecha Expedición</string>
+    <string name="lbl_date_ven">Fecha Vencimiento</string>
+    <string name="lbl_folio_aut">Folio Autorizado</string>
+    <string name="lbl_name">Nombre</string>
+    <string name="lbl_address">Domicilio</string>
+    <string name="lbl_siem">Registro SIEM</string>
+    <string name="lbl_oficio">No. de oficio de autorización de documentos</string>
+    <string name="lbl_remitente">Remitente</string>
+    <string name="lbl_location">Ubicación</string>
+    <string name="lbl_transportista">Transportista</string>
+    <string name="lbl_marca">Marca</string>
+    <string name="lbl_modelo">Modelo</string>
+    <string name="lbl_placas">Placas</string>
+    <string name="lbl_volumen">Volumen y/o Peso Amparado</string>
+    <string name="hint_folio">Escriba el folio</string>
+    <string name="hint_observaciones">Escriba sus observaciones</string>
+    
+</resources>

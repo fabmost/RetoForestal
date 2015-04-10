@@ -1,0 +1,211 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos al sistema - Prototipo</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+	<style>
+		.img_logo_forestapp{
+			max-height: 200px;
+			margin-bottom: 1em;
+		}
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+  </head>
+  <body>
+  
+	<div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+    
+    <div class="row text-center">
+      <div class="small-10 small-offset-1 columns text-center">
+        <p><i>Ingresa el nombre de usuario y contrase&ntilde;a.</i></p>
+      </div>
+    </div>
+    
+	<div class="row ">
+		<div class="medium-4 medium-offset-4 columns">
+			<div class="row logo_forestapp">
+				<div class="large-12 columns text-center">
+					<img class="img_logo_forestapp" src="img/logo_forestapp.png" alt="logo" />
+				</div>
+			 </div>
+			<div class="row ">
+				<div id="mensaje" class="large-12 columns ">
+					
+				</div>
+			 </div>
+			 <div class="row ">
+				<div id="mensaje" class="large-12 columns ">
+					<form id="formu">
+						<div class="row">
+							<div class="large-12 columns">
+							  
+								<input type="text" id="username" placeholder="Usuario" />
+							  
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+							  
+								<input type="password" id="pass" placeholder="Contrase&ntilde;a" />
+							  
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns text-right "> 
+								<a href="#" id="ingresar" class="button expand radius">Ingresar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			 </div>
+		</div>  
+	</div> 
+	<div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+    
+    <script src="js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="js/foundation.min.js"></script>
+    <script>
+		// inicialización de parse y foundation
+		$(document).foundation();
+		Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+		
+		function redirecciona(url){
+			window.location.assign(url);
+		}
+		currentUser = Parse.User.current(); // usuario antes de levantar al otro...
+		if (currentUser) {
+			Parse.User.logOut();
+		}
+		
+		$("#ingresar").click(function(){
+			Parse.User.logIn($("#username").val(), $("#pass").val(), {
+				success: function(user) {
+					// Do stuff after successful login.
+					console.log("Reconocido, id: " + user.id + ", rol: " + user.get("Rol").id);
+					switch(user.get("Rol").id){
+						case 'd5YkNZilSf': // cat
+							//console.log('cat');
+							redirecciona("cat/index.html");
+							break;
+						/*case 'lbQMaV3ftx': // inspector
+							//console.log('inspector');
+							redirecciona("inspector/index.html");
+							break;*/
+						case 'vg3dD6xSDg': // profepa
+							//console.log('profepa');
+							redirecciona("profepa/index.html");
+							break;
+						case 'ZC8gDiQfhu': // semarnat
+							//console.log('semarnat');
+							redirecciona("semarnat/index.html");
+							break;
+						/*case '1RhGvNMSrF': // transp
+							//console.log('transportista');
+							redirecciona("transportista/index.html");
+							cargaTitulares();
+							break;*/
+						case 'LzoB6SO9oi': // Titular
+							//console.log('titular');
+							redirecciona("titular/index.html");
+							break;
+					}
+				}, // fin  callback success
+				error: function(user, error) {
+					// The login failed. Check error to see why.
+					console.log("Desconocido");
+					$(document).foundation();
+					//$("#mensaje").html('<p class="alert-box alert">Usuario o contrase&ntilde;a incorrectos</p>');
+					var html = '<div data-alert class="alert-box alert radius">'+
+					'Usuario o contrase&ntilde;a incorrectos.'+
+					'<a href="#" class="close">&times;</a></div>';
+					var espacio = $("#mensaje");
+					espacio.addClass("hide");
+					espacio.html(html);
+					espacio.show("slow");
+					$(document).foundation();
+					
+					$("#pass").val("");
+						
+				}
+			}); // cierra parse login
+		}); // cierra click al ingresar
+		
+		
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Applications/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-822833853054079c0f54f08889e87bead50e8849.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/1.8.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="516ac6ca1d257cf5a1d95184b2ca21234f59c885">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-01a65d98ffffc78b53db631b8e692d8f088a290f.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a75b29dc51b364df032af8bcfcad7e54ccfda28d">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-507b2452b1b7ef5ec6a0ef41f40f4f4fd0491417.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/library-2.4.0-97d86913c2453b846fd43614705fd4f3ac9bea78.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-89849dd16ffe7b1e19fac285ea00e9acb7a052ca.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-b30801dff17a882603d987545adf6c9d2298cf69.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="95482e7c792a7c0d5a9d5461e97726bd54fe9549">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-4cea3ca62e89ddb2e3b3357d2ebb692b78e50e80.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="75c54c470e19b251749e6e6c2cf3d73c0b50aa64">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-fc81b965039ff0fe0ca34ba4a95fd37523115a1d.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/libs/core-3.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="908e18674f895e3e1fa8f4a954b8c637a23d2801">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/core-3.1.0-8cdd00da668d7113d07f128f7542cef3c71e880b.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.afollestad/material-dialogs/0.6.3.5/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="579e006fea216b5fe5ee05b2cf1ad7404427d215">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-486f66851eccd1f6f1e3a0cd6f154e04883f7238.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-51d9775c0bcb23914f4932d26662e7d3936ec74e.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.jpardogo.materialtabstrip/library/1.0.9/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ed2ab55be78d5d54ac9060d70d65a4573ae3d2ec">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-17d13f0d30205666603279285341017fbbd3e251.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/libs/Parse-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5811138d4e6cb9d45030e133ef1a61b935154c3a">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/Parse-1.9.0-5737fbc07cdd57912467c153a12afca074bab921.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/classes-5596301467f5b64cfc4bab12c32e2fc3ff41b580.jar" />
+    </item>
+    <item
+        jar="/Users/fabianrodriguez/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/fabianrodriguez/Documents/workspaceStudio/SEMARNAT/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-c825532d8310fd1936f15f0817a0065690e0956b.jar" />
+    </item>
+
+</items>

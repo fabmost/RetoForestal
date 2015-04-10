@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_folio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_folio"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_tipo"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"/>
+
+            <Spinner
+                android:id="@+id/spin_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_tipo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_destino"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"/>
+
+            <Spinner
+                android:id="@+id/spin_destino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_tipo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_transportista"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"/>
+
+            <Spinner
+                android:id="@+id/spin_transportista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_tipo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_materia"
+                android:textSize="22sp"
+                android:textColor="@color/gray_text"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_producto"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_desc"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_cantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_cant"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_volumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_vol"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_unidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_unidad"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                app:primaryColor="@color/primary_dark"
+                app:floatingLabel="highlight" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+Perfil:	user/pass
+validado- Titular de Aprovechamiento: TITWEB1; folio que valida: 12152116; los va a mandar  al webo despues de registrar transportista, ingresen su usuario y contra de nuevo y funciona...
+validado- SEMARNAT: SEMARNATWEB1
+validado-CAT: CATWEB1
+validado- PROFEPA: PROFEPAWEB1
+validado - Administrador: /Administrador/index.html (no login)
+
+Log Out: Vayan a la pantalla de login, antes de iniciar saca la sesion si la hay

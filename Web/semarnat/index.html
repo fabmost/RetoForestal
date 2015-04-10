@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEMARNAT - Prototipo</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <script src="../js/vendor/modernizr.js"></script>
+		<style>
+		/* desde aqui empieza footer y header */
+		.row.footer {
+		  max-width: 100%;
+		  padding: 0.8em;
+		  text-align: center;
+		  color: #868686;
+		  border-top-style: solid;
+		  border-top-color: #868686;
+		  border-top-width: 1px;
+		  margin-top: 4em;
+		}
+		.row.footer p{	
+			line-height: 1;
+			margin-bottom: 0.4rem;
+		}
+		.header {
+		  max-width: 100%;
+		  max-height: 200px; 
+		  margin-bottom:3em; 
+		}
+		.header .verde {
+			background-color:#00a89b;
+		}
+		.header img {
+		  max-height: 140px;
+		}
+		.header .logo_semarnat_container{
+			text-align:center;
+			vertical-align:middle;
+			width:29.16%;
+		}
+		.header .logo_forestapp_letras{
+			width:70.83%;
+		}
+		.logo_forestapp_letras .logo{
+			  width: 13.3%;
+			  padding: 0px;
+			  margin: 0.2em 2% 0% 0%;
+		}
+		.logo_forestapp_letras .letras{
+			  width: 55%;
+			  padding: 0px;
+			  margin-top: 1.5em;
+			  margin-left: 16.54%;
+			  margin-right: 9.54%;
+		}
+		.helper {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		/* hasta aqui llega footer y header */
+	</style>
+	<style>
+		/* para navegación */
+		.header{margin-bottom:0px;}
+		
+		.navegacion {
+			margin-bottom: 3em;
+			background-color: #89bd2e;
+		}
+		.item_navegacion{
+			  text-align: center;
+			  border-left-style: solid;
+			  border-color: rgb(215, 239, 214);
+			  padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		}
+		.item_navegacion:hover{
+			background-color: #1b676c;
+		}
+		.item_navegacion:first-child{
+			border-width:0px;
+		}
+		.item_navegacion a{
+			color:white;
+		}
+	</style>
+	<style>
+		/* estilo para la tabla*/
+		.detalle{
+			
+		}
+		table thead{
+			background-color:#89bd2e;
+			color:white;
+		}
+		table thead tr th{color: white;}
+		
+		table tbody tr{
+			border: solid 1px #DDDDDD;
+		}
+		
+		table {
+			 border-collapse: collapse;
+			 margin: auto;
+		}
+		.reveal-modal{
+			padding:0px;
+		}
+		div#datos_modal {
+		  top: 100px;
+		  position: relative;
+		}
+		div#datos {
+		  max-height: 250px;
+		  overflow: auto;
+		}
+	</style>
+	<style>
+		.flag_no img {
+		  max-width: 4em;
+		  
+		}
+		
+		
+		.noOperaciones {
+			line-height: 1em;
+			margin: 0.3em;
+		}
+		
+		.noOperaciones span{
+			  font-weight: bold;
+			  margin-left: .2em;
+			  font-size: 4em;
+			  line-height: .8em;
+		}
+		
+		.textoOperaciones{
+			color: #868686;
+			//background-image: url("../img/reembarques.png");
+			background-repeat:no-repeat;
+			background-size:3em;
+			background-position: left center; 
+		}
+		
+		.dos{font-size:1.1em;}
+		
+	</style>
+  </head>
+  <body>
+	<div class="row header clearfix" data-equalizer>
+	  <div class="left logo_semarnat_container" data-equalizer-watch>
+		
+		<img class="left " src="../img/Logo_Semarnat_Horizontal.jpg" alt="logo_semarnat"  />
+	  </div>
+	  <div class="left logo_forestapp_letras verde" data-equalizer-watch>
+		  <div class="left letras"  >
+			<span class="helper"> </span>
+		<img class="left logo_semarnet_letras" src="../img/forestappb.png" alt="logo_forestapp"  />
+		  </div>
+		  <div class="right logo text-right" >
+			<img  src="../img/icono_forestapp.png" alt="logo" />
+		  </div>
+	  </div>
+	</div>
+    
+	<!-- navegacion -->
+	<div class="navegacion">
+		<div class="row" data-equalizer>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="titulares_cats.html" title="Ver datos de titulares de aprovechamieto forestal y CAT">
+					Titulares de aprovechamieto y CAT
+				</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="inspectores.html" title="Ver historial de los inspectores de la PROFEPA">Inspectores PROFEPA</a>
+			  </div>
+			  <div class="small-4 columns item_navegacion" data-equalizer-watch>
+				<a href="index.html" title="Ver el historial de operaciones">Remisiones y reembarques</a>
+			  </div>
+		</div>
+	 </div>
+	
+    <div class="row">
+      <div class="large-12 columns">
+        <p>A continuaci&oacute;n se muestran el total de las operaciones realizadas y sus detalles</p>
+      </div>
+    </div>
+	
+	<div id="no_remisiones_reembarques" class="row small-uncollapse"> <!-- estadisticas y botones -->
+		<div class="medium-6 remisiones columns text-center">
+			<h2>Remisiones</h2>
+			<div class="row text-center"> <!-- estadisticas y botones -->
+				<div class="small-12 columns  flag_no">
+					
+					<p class="noOperaciones text-center"><img src="../img/remisiones.png"/><span>268</span></p>
+					<p class="textoOperaciones text-center">REMISIONES REALIZADAS</p>
+				</div>
+			</div>
+		</div>
+		<div class="medium-6 columns text-center reembarques">
+			<h2>Reembarques</h2>		
+			<div class="row text-center"> <!-- estadisticas y botones -->
+				<div class="small-12 columns  flag_no">
+					
+					<p class="noOperaciones text-center"><img src="../img/reembarques.png"/><span>348</span></p>
+					<p class="textoOperaciones text-center">REEMBARQUES REALIZADAS</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+		<div id="datos" class="hide">
+			<table id="tabla">
+				<thead>
+					<tr>
+						<th >Concepto</th>
+						<th >Folio</th>
+						<th >Titular</th>
+						<th >Transportista</th>
+						<th >Cantidad</th>
+						<th >Volumen / Peso</th>
+						<th >Fecha de emisi&oacute;n</th>
+						<th > </th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+		<div id="mensaje">
+			<p>Cargando informaci&oacute;n, espera por favor</p>
+		</div>
+		
+		<!--a href="#" data-reveal-id="myModal" class="trigger" id="1">Click Me For A Modal</a-->
+		<div id="myModal" class="reveal-modal-bg" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div id="datos_modal" class="hide">
+				<!--h2 id="modalTitle">Detalles de la operaci&oacute;n.</h2>
+				<p class="lead">A continuaci&oacute;n se encuentran los detalles de la operaci&oacute;n.</p-->				
+				<table id="tabla_titular">
+					<thead>
+						<tr>
+							<th >Dato</th>
+							<th >Informaci&oacute;n</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td >Tipo de documento</td><td class="detalle" id="tipo_doc">  </td></tr>
+						<tr><td >Folio de autorizaci&oacute;n</td><td class="detalle" id="folio_auto">  </td></tr>
+						<tr><td >Folio progresivo</td><td class="detalle" id="folio_prog">  </td></tr>
+						<tr><td >Transporte</td><td class="detalle" id="transporte">  </td></tr>
+						<tr><td >Titular de aprovechamiento</td><td class="detalle" id="titular">  </td></tr>
+						<tr><td >Observaciones</td><td class="detalle" id="observaciones">  </td></tr>
+						<tr><td >Saldo disponible</td><td class="detalle" id="saldo_disponible">  </td></tr>
+						<tr><td >Saldo restante</td><td class="detalle" id="saldo_restante">  </td></tr>
+						<tr><td >Cantidad amparada</td><td class="detalle" id="cantidad">  </td></tr>
+						<tr><td >Volumen o peso amparado</td><td class="detalle" id="volumen_peso">  </td></tr>
+						<tr><td >Unidades</td><td class="detalle" id="unidades">  </td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="mensaje_modal">
+				<p>Cargando datos, espere por favor...</p>
+			</div>		  
+		  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+		</div>
+      </div>
+    </div>
+    
+	<div class="row footer">
+	  <div class="small-12 columns">
+		<p>Blvd. Adolfo Ruiz Cortines # 4209 Col. Jardines de la Monta&ntilde;a, Deleg. Tlalpan</p>
+		<p>Distrito Federal CP. 14210, Tel. (55) 5490-0900</p>
+	  </div>
+	  
+	</div>
+    <script src="../js/vendor/jquery.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script> 
+    <script src="../js/foundation.min.js"></script>
+    <script>
+	 // inicialización de parse y foundation
+      $(document).foundation();
+	  Parse.initialize("xJPG4xeiwqTF0RKZgHboZDTzl2aWn7lDBTM8iZQh", "Jmvrl7iprcqLFyeoptiorcg5ISdlrSTlAOuoIoyF");
+	  function llenaModal(id){
+			var Documentos = Parse.Object.extend("Documentos");
+			var query = new Parse.Query(Documentos);
+			query.equalTo("objectId", id);
+			query.include("Transportista");
+			query.include("CAT");
+			query.include("Titular");
+			query.first({
+			  success: function(doc) {
+				console.log("aqui esta la remision :) " + doc);
+				$(".detalle").text("");
+				$("#tipo_doc").text(doc.get("Tipo"));
+				$("#folio_auto").text(doc.get("Folio_auto"));
+				$("#folio_prog").text(doc.get("Folio_prog"));
+				$("#transporte").text(doc.get("Transportista").get("Propietario"));
+				$("#titular").text(doc.get("Titular").get("Nombre"));
+				$("#observaciones").text(doc.get("Observaciones"));
+				$("#saldo_disponible").text(doc.get("Saldo_disponible"));
+				$("#saldo_restante").text(doc.get("Saldo_restante"));
+				$("#cantidad").text(doc.get("Cantidad"));
+				$("#volumen_peso").text(doc.get("Volumen_peso"));
+				$("#unidades").text(doc.get("Unidades"));
+				$("#mensaje_modal").addClass("hide");
+				$("#datos_modal").removeClass("hide");
+			  },
+			  error: function(error) {
+				$("mensaje_modal p").text("Modal Error: " + error.code + " " + error.message);
+			  }
+			});
+		}
+		
+		$(document).ready(function(){
+			currentUser = Parse.User.current(); // usuario antes de levantar al otro...
+			if (currentUser) {
+				// cargando los elementos de la tabla
+				var Documentos = Parse.Object.extend("Documentos");
+				var tbody = '';
+				var remision = new Parse.Query(Documentos);
+				remision.equalTo("Tipo", "Remision");
+				remision.include("CAT");
+				remision.include("Transportista");
+				remision.include("Titular");
+				
+				var reembarque = new Parse.Query(Documentos);
+				reembarque.equalTo("Tipo", "Reembarque");
+				reembarque.include("CAT");
+				reembarque.include("Transportista");
+				reembarque.include("Titular");
+				// poner query
+				var query = Parse.Query.or(remision, reembarque);
+				query.include("CAT");
+				query.include("Transportista");
+				query.include("Titular");
+				query.descending("createdAt");
+				query.limit(10);
+				query.find({
+					success: function(docs) {
+						console.log(docs.length + " documentos encontrados");
+					  
+						for (var i = 0; i < docs.length; i++) {
+						  //var doc = docs[i].get("Transportista");
+						  //console.log(doc);
+						  tbody = tbody + "<tr>"; //</tr> 
+						   tbody = tbody + "<td>" + docs[i].get("Tipo") + "</td>";
+						   tbody = tbody + "<td>" + docs[i].get("Folio_prog") + "</td>";
+						   tbody = tbody + "<td>" + docs[i].get("Titular").get("Nombre") + "</td>";
+						   tbody = tbody + "<td>" + docs[i].get("Transportista").get("Propietario") + "</td>";//.get("Propietario")
+						   tbody = tbody + "<td>" + docs[i].get("Cantidad") + "</td>";
+						   tbody = tbody + "<td>" + docs[i].get("Volumen_peso") + "</td>";
+						   tbody = tbody + "<td>" + docs[i].get("Fecha_exp") + "</td>";
+						   tbody = tbody + '<td><a href="#" data-reveal-id="myModal" class="trigger" id="' + docs[i].id + '">Ver detalles</a></td>';
+						  tbody = tbody + "</tr>";
+						}
+						$("#tabla tbody").html(tbody);
+						$(document).foundation(); // reinicializamos para acceder al modal
+						$(".trigger").click(function(){
+							console.log("trigger " + $(this).attr("id")+ " reportandose");
+							llenaModal($(this).attr("id"));
+						});
+						
+						
+						$("#mensaje").addClass("hide");
+						$("#datos").removeClass("hide");
+					}, error: function(error) {
+						console.log("Tabla Error: " + error.code + " " + error.message);
+						$("#mensaje p").text("Error");
+					}
+				});
+			} else {
+				// show the signup or login page
+				console.log("no login info");
+			}
+		});
+		
+		
+    </script>
+  </body>
+</html>
