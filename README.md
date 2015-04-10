@@ -1,5 +1,9 @@
 # RetoForestal
 
+## Manual del Prototipo
+* [Manual Web](,"")
+* [Manual Móvil](,"")
+
 ## Demo
 * [Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
 * [Demo Web SEMARNAT](adminforestapp.appjota.com,"Sitio Web SEMARNAT")
@@ -29,3 +33,6 @@
 * Mención Honorífica y Ganadores del Reto 'Mi Policia' Hack CDMX 2015
 * Premio del Público TheAppDateAwards 2015
 * Finalistas Hack CDMX 2014
+
+## LICENSE
+FORESTAPP is open-sourced software licensed under the [Apache License](https://github.com/fabmost/RetoForestal/blob/master/LICENSE,"Apache License")
