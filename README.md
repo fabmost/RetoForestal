@@ -5,10 +5,10 @@
 * [Manual Móvil](https://docs.google.com/document/d/1N36pVaTo6nKYtzKe7_2Fe0CTbm0Sphp4cmHtfuP5w2E/edit?usp=sharing,"Manual Móvil")
 
 ## Demo
-* [Demo Web Usuarios](http://forestapp.appjota.com/,"Sitio Web Usuarios")
-* [Demo Web Administrador](http://adminforestapp.appjota.com/,"Sitio Web Admin")
-* [APK App Usuarios](https://github.com/fabmost/RetoForestal/blob/master/Apps/FORESTAPP.apk,"APK Usuario")
-* [APK App Agente de PROFEPA](https://github.com/fabmost/RetoForestal/blob/master/Apps/PROFEPA.apk,"APK PROFEPA")
+* [Demo Web Usuarios](http://forestapp.appjota.com/)
+* [Demo Web Administrador](http://adminforestapp.appjota.com/)
+* [APK App Usuarios](https://github.com/fabmost/RetoForestal/blob/master/Apps/FORESTAPP.apk)
+* [APK App Agente de PROFEPA](https://github.com/fabmost/RetoForestal/blob/master/Apps/PROFEPA.apk)
 
 ## Documentación
 
@@ -22,7 +22,7 @@
 [Enlace de Google Drive](https://docs.google.com/document/d/13n8vHyOQ0m_PPLuKcZsVvkE5MepcFgO5Vg4ru7hqknk/edit?usp=sharing,"Pan de Trabajo")
 
 ### Video Promocional
-[Enlace de Youtube](https://youtu.be/gf9ILj9WFeo "Video Promocional")
+[Enlace de Youtube](https://youtu.be/gf9ILj9WFeo)
 
 ## Clicky
 | Misión     | Visión    | Valores |
