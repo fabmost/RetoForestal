@@ -5,8 +5,8 @@
 * [Manual Móvil](https://docs.google.com/document/d/1N36pVaTo6nKYtzKe7_2Fe0CTbm0Sphp4cmHtfuP5w2E/edit?usp=sharing,"Manual Móvil")
 
 ## Demo
-* [Demo Web Usuarios](forestapp.appjota.com,"Sitio Web Usuarios")
-* [Demo Web Administrador](adminforestapp.appjota.com,"Sitio Web Admin")
+* [Demo Web Usuarios](http://forestapp.appjota.com/,"Sitio Web Usuarios")
+* [Demo Web Administrador](http://adminforestapp.appjota.com/,"Sitio Web Admin")
 * [APK App Usuarios](https://github.com/fabmost/RetoForestal/blob/master/Apps/FORESTAPP.apk,"APK Usuario")
 * [APK App Agente de PROFEPA](https://github.com/fabmost/RetoForestal/blob/master/Apps/PROFEPA.apk,"APK PROFEPA")
 
